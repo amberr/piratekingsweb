@@ -227,11 +227,11 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #7AA97C;
 }
 
 a {
-  color: #0088cc;
+  color: #E55755;
   text-decoration: none;
 }
 
@@ -617,6 +617,8 @@ a:focus {
 .container {
   margin-right: auto;
   margin-left: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
   *zoom: 1;
 }
 
