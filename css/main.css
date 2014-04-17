@@ -1,0 +1,61 @@
+.head {
+     font-family:"Metal Mania";
+     font-weight:100px;
+     font-size:50px;
+     margin-left:-25px;
+}
+
+.justify {
+     text-align: justify;
+}
+
+#myCarousel {
+     width:100%;
+     margin-left:0px;
+}
+
+.carousel-img {
+     margin:0 auto;
+     width: auto;
+     height: 500px;
+     max-height: 500px;
+}
+
+.jumbotron p.active {
+     color: #1f6ddd;
+}
+
+body {
+     padding:20px;
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+     padding: 10px 50px 50px 50px;
+     margin-bottom: 20px;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("../images/teamphoto2_alt.jpg");
+     background-position:right;
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;	
+     border-radius: 10px;
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+}
+
+.project a {
+     text-align: center;
+}
+
+
