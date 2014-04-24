@@ -5,6 +5,10 @@
      margin-left:-25px;
 }
 
+.github-icon {
+     max-height: 50px;
+}
+
 .head2 {
      font-family:"Metal Mania";
      font-weight:100px;
@@ -53,7 +57,7 @@ body {
      z-index: 1000;
 	background: none;
      padding: 10px 50px 50px 50px;
-     margin-bottom: 20px;
+     margin-bottom: 0px;
 }
 
 .jumbotron:after {
