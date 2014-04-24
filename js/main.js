@@ -11,6 +11,7 @@ $(document).ready(function() {
 function initializePage() {
 	$("a.thumbnail").click(projectClick);
 	$('#submitBtn').click(buttonClick);
+  $('.carousel').carousel('pause');
 }
 
 function projectClick(e) {
