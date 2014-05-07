@@ -5,6 +5,12 @@
      margin-left:-25px;
 }
 
+.indent {
+     padding-left:20px;
+     padding-right: 20px;
+
+}
+
 .github-icon {
      max-height: 50px;
 }

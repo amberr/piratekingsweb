@@ -25,8 +25,8 @@
 		    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
 		        <li><a href="#ideas" data-toggle="tab">Ideating</a></li>
 		        <li><a href="#story" data-toggle="tab">Storyboarding / Skit</a></li>
-		        <li class="active"><a href="#woz" data-toggle="tab">Wizard-of-Oz</a></li>
-		       	<li><a href="#func1" data-toggle="tab">Prototype I</a></li>
+		        <li><a href="#woz" data-toggle="tab">Wizard-of-Oz</a></li>
+		       	<li class="active"><a href="#func1" data-toggle="tab">Prototype I</a></li>
 		        <li><a href="#user1" data-toggle="tab">User Study I</a></li>
 		        <li><a href="#func2" data-toggle="tab">Prototype II</a></li>
 		        <li><a href="#user2" data-toggle="tab">User Study II</a></li>
@@ -316,13 +316,59 @@
 					  </a>
 					</div>
 		        </div>
-		        <div class="tab-pane active" id="woz">
+		        <div class="tab-pane" id="woz">
 		            <h3 class="title">Wizard-of-Oz Testing</h3>
 		           <iframe src="https://docs.google.com/presentation/d/18IQhINbo9YmVFi_jJTW6PtAz-7Xxz78r47-WkcGX_Ec/embed?start=false&loop=false&delayms=3000" frameborder="0" width="940" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 		        </div>
-		        <div class="tab-pane" id="func1">
+		        <div class="tab-pane active" id="func1">
 		            <h3 class="title">Functional Prototype I</h3>
-		            <p class="dates">May 8</p>
+
+
+					<div class="lead"><b> UI Mocks: </b></div>
+
+
+		            <iframe src="https://docs.google.com/presentation/d/1lPHTKCzA0kfsWhkfp18d5nEsTz8IAffWAJmM7EYXMHk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="940" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+		            
+					<div class="lead"><b> Prototype: </b></div>
+					<div class="indent">
+		            The prototype is at <a href="http://dynamixx.herokuapp.com">dynamixx.herokuapp.com</a>. A few notes on the current implementation:
+		            <ul>
+		            <li>The first person to visit the site is assumed to be the dominant partner/the partner in control.</li>
+		            <li>To allow their partner to join, they just need to send the url + assigned hash to their partner. </li>
+		            <li> Video/audio currently needs to be enabled for both partners in order for text chat to take place.
+		            <li>The prototype also assumes the submissive partner/controlled partner has the hardware device we developed.</li>
+
+		            </ul>
+		            </div>
+
+		            <div class="lead"><b> Design decisions: </b></div>
+		            <div class="indent">
+		            <p>Our first prototype followed the direction of our initial needfinding and use tests, which confirmed that a kink community was very interested in extending its play to scenarios in which partners weren’t in the same location. Still, additional feedback caused us to consider some of our users who did not identify with the kink scene, but who were nonetheless interested in feeling sensations sent by their partners across distances.</p>
+
+					<p>As an example, User A in our initial test discussed the fact that he had had several longterm relationships, but that only one of them had not been long-distance. Though not experienced in “kink,” he considered himself a specialist in intimate communication across distances and was interested in how an app that generated tactile feedback could round out intimacy between couples.</p>
+
+					<p>Thus, we pivoted slightly to make Dynamixx an app that lets couples explore many aspects of communication play, including tactile, across distance. Dynamixx Prototype 1 includes the following features:</p>
+
+					<p><b>Control</b> feature: the person who initiates the communication is given the option to grant or rescind video and audio for the second person, thus enabling users to explore exciting and perhaps unfamiliar power dynamics during their chats. We believe that allowing for such a power dynamic could inspire more honest and certainly more creative communication between familiar parties. Each user has a permanent chat box so that communication cannot be entirely removed from either party.</p>
+
+					<p><b>Hardware</b> control feature: the controlling party may activate the tactile hardware from his/her app. We chose asymmetrical use for the tactile portion because 1) it was simply more realistic for one person from a couple to have shared hardware than for both parties to have it, 2) it could amplify the unequal dynamic between the two parties, and 3) it was more akin to real life, in which interactions (such as neck massages or hugs) are often initiated by one person and received by another.</p>
+
+					<p><b>Tactile feature:</b> the second user owns the tactile hardware and can clip it to almost anywhere on his or her body or clothing that she wishes. We chose to make the hardware vibrate (battery-operated motors) to come close to a purring or general biological movement sensation, and twist inward to simulate a squeezing or kneading sensation. These two movements give the user many choices of simulated tactile sensations depending on where the hardware is placed: it can move from simple tugging on a jacket to massage to erotic stimulation.</p>
+
+
+					<p><b>Prototype 2 Plans</b></p>
+					<p>Our plans for Prototype 2, though solidified following our additional user tests, currently include the following:</p>
+					<ul>
+					<li>Create second hardware prototype with smaller form factor, so that it can be transported and worn easily. Ideally, use a quieter power source so that the tactile portion is less likely to interrupt other communication types.</li>
+					<li>Add a “backstage” feature to the app to let more extreme users experience darker interactions when they wish.</li>
+					<li>Alter stylesheets according to user feedback.</li>
+					</ul>
+				</div>
+
+
+
+
 		        </div>
 		        <div class="tab-pane" id="user1">
 		            <h3 class="title">User Study I</h3>
