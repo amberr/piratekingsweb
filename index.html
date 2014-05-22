@@ -27,8 +27,8 @@
 		        <li><a href="#story" data-toggle="tab">Storyboarding / Skit</a></li>
 		        <li><a href="#woz" data-toggle="tab">Wizard-of-Oz</a></li>
 		       	<li><a href="#func1" data-toggle="tab">Prototype I</a></li>
-		        <li class="active"><a href="#user1" data-toggle="tab">User Study I</a></li>
-		        <li><a href="#func2" data-toggle="tab">Prototype II</a></li>
+		        <li><a href="#user1" data-toggle="tab">User Study I</a></li>
+		        <li class="active"><a href="#func2" data-toggle="tab">Prototype II</a></li>
 		        <li><a href="#user2" data-toggle="tab">User Study II</a></li>
 		        <li><a href="#final" data-toggle="tab">Final Presentation</a></li>
 		    </ul>
@@ -370,7 +370,7 @@
 
 
 		        </div>
-		        <div class="tab-pane active" id="user1">
+		        <div class="tab-pane" id="user1">
 		            <h3 class="title">User Study I</h3>
 		            <div class="indent">
 		            <p><b>Introduction: Describe your motivation and goals. Note your driving questions and hypotheses.</b></p>
@@ -483,9 +483,28 @@
 
 		            </div>
 		        </div>
-		        <div class="tab-pane" id="func2">
+		        <div class="tab-pane  active" id="func2">
 		            <h3 class="title">Functional Prototype II</h3>
-		            <p class="dates">May 22</p>
+		            <div class="indent">
+		            <p><b>Implementation progress</b></p>
+
+					<p>This week, we focused on making sure users felt safe and secure during the entirety of their Dynamixx-facilitated interactions. This involved letting them know what was going on at all times. We also made some updates to the way the hardware can be controlled, as well as a number of aesthetic changes. We were able to respond to most of the concerns that were revealed in user testing so far. One future change we could implement would be to facilitate changes to agreements about controls without starting over. However, because the only users that expressed concern about this were peripheral members of the scene (people who have experimented with BDSM, but do not regularly attend BDSM clubs), we have decided that this is a low priority that we will only address if it is confirmed via further testing with core members of the scene (those who regularly attend clubs or participate in groups such as Kardinal Kink or Mission Control).</p>
+
+					<p><b>Changes and updated features</b></p>
+
+					<p><i>Added status messages.</i> Users were occasionally unsure what was going on during negotiation. For example, when the partner in control would relinquish tactile control, the other partner would see that element light up and say “OK!” but would be unsure what had been agreed to. Additionally, when a partner in control’s request was rejected, they didn’t understand what had happened and why they were being offered the same choices again. Any action related to negotiation adds an appropriately colored (based on the relevant element) status message to the chat box. Additionally, when the partner in control "blindfolds" or "silences" their partner, a status alert shows up in their chat box to reaffirm that this is the case (this is also reinforced visually with a change in button color).</p>
+
+					<p><i>Granular controls.</i> Instead of an on-off toggle, we have implemented the ability for the user to control the intensity of the hardware’s movement. They can set intensity via a slider, which sends a signal to the hardware to move with the specified intensity. Users requested this feature as a way of helping them ease into the scene, as well as to feel a greater sense of control over their partner’s hardware. We made use of a familiar image so users would recognize that sliding the knob increased amplitude. </p>
+
+					<p><i>Tooltips and language changes.</i> Because of the unconventional nature of our app, users were unsure during the negotiation phase what each type of control meant. We added small tooltips next to each type of control (tactile, audio, and hardware) that display some information about each upon mousing over them. This will help users understand what each control will allow them (or their partner) to do, so they know what they are agreeing to. Additionally, as user tests indicated that members of the kink scene responded best when it was clear that the product was targeted at them, we utilized more language from the community in these descriptions. For example, we used “blindfold” and “gag” metaphors in the tooltips, and we changed the “Start” button to “Start scene,” as these sorts of interactions are often referred to as “scenes” by members of the community.</p>
+
+					<p><i>Shift in style and feel between stages, especially aftercare.</i> Based on needfinding data and data from our post-testing interviews, it is important to establish a shift in tone between the three stages of a BDSM interaction. It is also important that the style of these shifts reflects the nature of these transitions, as in the user tests, the style shift to green during aftercare merely left users confused. The shift to the main scene now features an animated darkening and the addition of a curtain image to play off of the “scene” metaphor. The shift to aftercare is now marked by an animation to a comforting pink color. There are also several new features for aftercare. First, a banner shows up that says which partner initiated the aftercare and reassuring that all controls have been turned off. This goes along with the sense of safety mentioned previously. Additionally, a number of stats, such as how many times the partner in control “blindfolded” the other partner, or how many times they received a warning, appear in the chat box. These are meant not only to mark the end of the interaction, but to encourage discussion about the scene that just took place. We will evaluate the effectiveness of these stats in our upcoming user tests. (The gathering of these stats also enables logging, which will be useful during our deployment tests of the software this week.)</p>
+
+					<p><i>Other less major changes and new features.</i> This week also saw a large number of bug fixes and tweaks to improve the UI. For example, previously, someone could see their partner’s video before they had hit the “start” button. Now, the partner’s video only shows up when they consent to it, and a “Waiting for partner…” message is shown in the meantime. This again contributes to the safety and trust that we want to establish between users and the app. We also changed the wording for “re-negotiate,” as users did not realize that it would force them to go through the entire negotiation process again. Now, it says “Start over,” which we think will allow users to create a mental model for the button’s function that is closer to what it actually does. Additionally, last week this “Re-negotiate”/”Start over” feature was quite buggy, but this week it has been debugged and now functions correctly. Users are now able to start over after the session was terminated via the STOP button, which was not previously possible. We also discovered via user testing that important buttons during the negotiation were covered by the chat box with certain browser settings; this issue was resolved via dynamic CSS. There are also a number of aesthetic improvements, which we again believe to contribute to the perceived legitimacy and trust for the app.</p>
+
+					<p>As before, the app is located at <a href="http://dynamixx.herokuapp.com">dynamixx.herokuapp.com</a>. We ask that you please refrain from using the slider, as this does control our hardware!</p>
+
+		            </div>
 		        </div>
 		        <div class="tab-pane" id="user2">
 		            <h3 class="title">User Study II</h3>
