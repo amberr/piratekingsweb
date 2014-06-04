@@ -9,6 +9,7 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/jquery.fancybox.css" rel="stylesheet">
     	<link href='http://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
     	<script src="https://code.jquery.com/jquery.js"></script>
     	<script src="js/jquery.fancybox.pack.js"></script>
 		<script src="js/bootstrap.js"></script>
@@ -551,21 +552,23 @@
 		        </div>
 		       	<div class="tab-pane active" id="final">
 		            <h3 class="title">Final Presentation</h3>
-		            	<div class='indent2'><h4 class="media-heading">Presentation Slides</h4></div>
-		            	<iframe src="https://docs.google.com/presentation/d/147ZwFEpHHyKc3KLIia0-kQ8TIb7ffH3J-73UomI7M1E/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-		            	<div class='indent2'><h4 class="media-heading">Poster</h4></div>
-		            	<a class="fancybox" href="images/poster.png"><img src="images/poster.png" alt=""/></a>
-		            	<div class='indent2'><h4 class="media-heading">Code & Instructions</h4></div>
+		            	<p><div class='head2'><h4 class="media-heading">Presentation Slides</h4></div>
+		            	<iframe src="https://docs.google.com/presentation/d/147ZwFEpHHyKc3KLIia0-kQ8TIb7ffH3J-73UomI7M1E/embed?start=false&loop=false&delayms=3000" frameborder="0" width="940" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>		            	
+		            	<p><div class='head2'><h4 class="media-heading">Presentation Video</h4></div>
+		            	<iframe width="940" height="569" src="http://www.youtube.com/embed/WR9_VCCK-lY" frameborder="0" allowfullscreen></iframe></p>
+		            	<p><div class='head2'><h4 class="media-heading">Poster</h4></div>
+		            	<a class="fancybox" href="images/poster.png"><img src="images/poster.png" alt=""/></a></p>
+		            	<div class='head2'><h4 class="media-heading">Code & Instructions</h4></div>
 		            	<div class='indent'>
-		            		<a href='https://docs.google.com/uc?export=download&id=0B7hu1ehW5S7qMk56bE5qeDBkX1k' target="_blank">Source code (zipped, hosted on Google Drive)</a><br/>
-		            		<a href='https://github.com/amberr/piratekings'>GitHub repo</a><br/>
-		            		<a href='http://dynamixx.herokuapp.com'>Deployed site</a><br/>
+		            		<a href='https://docs.google.com/uc?export=download&id=0B7hu1ehW5S7qeFVsYXRCZWlhYW8' target="_blank">Source code (zipped, hosted on Google Drive)</a><br/>
+		            		<a href='https://github.com/amberr/piratekings' target="_blank">GitHub repo</a><br/>
+		            		<a href='http://dynamixx.herokuapp.com' target="_blank">Deployed site</a><br/>
 		            		To use:
 		            		<ul>
-		            			<li>Open dynamixx.herokuapp.com or localhost:8080. This will assign you a chatroom/hash. The first person to enter the chat is, by default, the partner in control.</li>
-		            			<li>Open the url with hash in a second tab (or on a second computer, if using Heroku). This interface is for the partner on the receiving end of control.
+		            			<li>Open <a href='http://dynamixx.herokuapp.com' target="_blank">the deployed site</a> or run <span class='code'>node server.js</span> in the root directory and open <a href='http://localhost:8080' target="_blank">localhost:8080</a>. This will assign you a chatroom/hash. The first person to enter the chat is, by default, the partner in control.</li>
+		            			<li>Copy the url into a second tab (can be on a second computer, if using Heroku). This interface is for the partner on the receiving end of control. Only two people can enter a chat, so if you do this more than once you'll get booted into a new room.
 		            		</ul>
-		            		The Heroku version has some intermittent issues with webRTC. If video does not show up, or if partners unexpectedly leave during chat, this is the reason. Running it locally produces the most stable results.
+		            		Heroku seems to have some intermittent issues with webrtc. If video does not show up, or if partners unexpectedly leave during chat, this is the reason. Running it locally produces the most consistently stable results.
 		            	</div>
 		        </div>
 		    </div>
