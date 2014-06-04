@@ -12,6 +12,7 @@ function initializePage() {
 	$("a.thumbnail").click(projectClick);
 	$('#submitBtn').click(buttonClick);
   $('.carousel').carousel('pause');
+  $('.fancybox').fancybox({fitToView: false});
 }
 
 function projectClick(e) {
